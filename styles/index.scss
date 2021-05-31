@@ -1,0 +1,80 @@
+body {
+  font-family: "Open Sans";
+}
+
+#a-cart .a-section__title:before {
+  background-position: 0 -30px;
+}
+
+#a-delivery .a-section__title:before {
+  background-position: -30px 0;
+}
+
+#a-payment .a-section__title:before {
+  background-position: -60px 0;
+}
+
+#a-customer .a-section__title:before {
+  background-position: -90px 0;
+}
+
+.a-delivery {
+  max-width: 790px;
+  margin: 0 auto;
+
+  &__content {
+    display: none;
+    margin-top: 24px;
+
+    .row:not(:last-of-type) {
+      margin-bottom: 18px;
+    }
+
+    .a-address-cell {
+      width: 40%;
+    }
+
+    .a-time-cell,
+    .a-availability-cell,
+    .a-order-cell {
+      width: 20%;
+    }
+
+    @media screen and (max-width: 575px) {
+      .a-availability-cell,
+      .a-order-cell {
+        display: none;
+      }
+    }
+  }
+}
+
+.a-payment {
+  &__content {
+    display: none;
+    max-width: 790px;
+    margin: 24px auto 0;
+
+    .a-radio:not(:last-of-type) {
+      margin-bottom: 18px;
+    }
+
+    .row:not(:last-of-type) {
+      margin-bottom: 18px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+
+  &__description {
+    margin-left: 35px;
+  }
+}
+
+.a-customer {
+  .row:not(:last-of-type) {
+    margin-bottom: 18px;
+  }
+}

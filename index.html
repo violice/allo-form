@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="./styles/bootstrap-utilities.min.css" />
+    <link rel="stylesheet" href="./styles/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./styles/dist/elements.min.css" />
+    <link rel="stylesheet" href="./styles/dist/index.min.css" />
+  </head>
+  <body>
+    <div class="a-container">
+      <div id="a-cart" class="a-section">
+        <div class="a-section__header">
+          <h2 class="a-section__title">Товары в заказе</h2>
+          <a class="a-section__edit" href="javascript:void(0)">Изменить</a>
+        </div>
+
+        <div class="a-section__content">Без изменений</div>
+      </div>
+
+      <div id="a-delivery" class="a-section">
+        <div class="a-section__header">
+          <h2 class="a-section__title">Доставка</h2>
+          <a class="a-section__edit" href="javascript:void(0)">Изменить</a>
+        </div>
+
+        <div class="a-section__content">
+          <div class="a-delivery">
+            <div class="row gy-4">
+              <div class="col-12 col-sm-4">
+                <div class="a-card" id="pickUp">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/pickUp.png"
+                      alt="Самовывоз"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">Самовывоз</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="a-card" id="courierCity">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/courierCity.png"
+                      alt="Курьером по Минску"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">Курьером по Минску</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="a-card" id="courierCountry">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/courierCountry.png"
+                      alt="Курьером по РБ"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">Курьером по РБ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="a-delivery__content" id="pickUpForm">
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Укажите город доставки</label>
+                    <select>
+                      <option>Город 1</option>
+                      <option>Город 2</option>
+                      <option>Город 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="a-table">
+                <div class="a-table__header">
+                  <div class="a-table__header-cell a-address-cell">
+                    Адрес магазина
+                  </div>
+                  <div class="a-table__header-cell a-time-cell">
+                    График работы
+                  </div>
+                  <div class="a-table__header-cell a-availability-cell">
+                    Товар в наличии
+                  </div>
+                  <div class="a-table__header-cell a-order-cell">Под заказ</div>
+                </div>
+
+                <div class="a-table__body">
+                  <div class="a-table__row">
+                    <label class="a-radio">
+                      <input class="a-radio__input" type="radio" name="shop" />
+                      <span class="a-radio__checkmark"></span>
+                      <span class="a-radio__label">
+                        <div class="a-table__cell a-address-cell">
+                          Адрес магазина
+                        </div>
+                        <div class="a-table__cell a-time-cell">
+                          График работы
+                        </div>
+                        <div class="a-table__cell a-availability-cell">Да</div>
+                        <div class="a-table__cell a-order-cell">-</div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="a-table__row">
+                    <label class="a-radio">
+                      <input class="a-radio__input" type="radio" name="shop" />
+                      <span class="a-radio__checkmark"></span>
+                      <span class="a-radio__label">
+                        <div class="a-table__cell a-address-cell">
+                          Адрес магазина
+                        </div>
+                        <div class="a-table__cell a-time-cell">
+                          График работы
+                        </div>
+                        <div class="a-table__cell a-availability-cell">Нет</div>
+                        <div class="a-table__cell a-order-cell">1 день</div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="a-delivery__content" id="courierCityForm">
+              <div class="row">
+                <div class="col-4">
+                  <div class="a-form-control">
+                    <label>Улица</label>
+                    <input />
+                  </div>
+                </div>
+
+                <div class="col-4 col-sm-2">
+                  <div class="a-form-control">
+                    <label>Номер дома</label>
+                    <input type="number" />
+                  </div>
+                </div>
+
+                <div class="col-4 col-sm-2">
+                  <div class="a-form-control">
+                    <label>Квартира</label>
+                    <input type="number" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4 col-sm-2">
+                  <div class="a-form-control">
+                    <label>Подъезд</label>
+                    <input type="number" />
+                  </div>
+                </div>
+
+                <div class="col-4 col-sm-2">
+                  <div class="a-form-control">
+                    <label>Этаж</label>
+                    <input type="number" />
+                  </div>
+                </div>
+
+                <div class="col-4 col-sm-2">
+                  <div class="a-form-control">
+                    <label>Домофон</label>
+                    <input type="number" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="a-form-control">
+                    <label>Желаемое время доставки</label>
+                    <select>
+                      <option>Время 1</option>
+                      <option>Время 2</option>
+                      <option>Время 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="a-form-control">
+                    <label>Комментарий</label>
+                    <textarea rows="4"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="a-delivery__content" id="courierCountryForm">
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Город/Населенный пункт</label>
+                    <select>
+                      <option>Город 1</option>
+                      <option>Город 2</option>
+                      <option>Город 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                  <div class="a-form-control">
+                    <label>Улица</label>
+                    <input />
+                  </div>
+                </div>
+
+                <div class="col-4 col-sm-2">
+                  <div class="a-form-control">
+                    <label>Номер дома</label>
+                    <input type="number" />
+                  </div>
+                </div>
+
+                <div class="col-4 col-sm-2">
+                  <div class="a-form-control">
+                    <label>Квартира</label>
+                    <input type="number" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4 col-sm-2">
+                  <div class="a-form-control">
+                    <label>Подъезд</label>
+                    <input type="number" />
+                  </div>
+                </div>
+
+                <div class="col-4 col-sm-2">
+                  <div class="a-form-control">
+                    <label>Этаж</label>
+                    <input type="number" />
+                  </div>
+                </div>
+
+                <div class="col-4 col-sm-2">
+                  <div class="a-form-control">
+                    <label>Домофон</label>
+                    <input type="number" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="a-form-control">
+                    <label>Желаемое время доставки</label>
+                    <select>
+                      <option>Время 1</option>
+                      <option>Время 2</option>
+                      <option>Время 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="a-form-control">
+                    <label>Комментарий</label>
+                    <textarea rows="4"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="a-payment" class="a-section">
+        <div class="a-section__header">
+          <h2 class="a-section__title">Оплата</h2>
+          <a class="a-section__edit" href="javascript:void(0)">Изменить</a>
+        </div>
+
+        <div class="a-section__content">
+          <div class="a-payment">
+            <div class="row gy-4">
+              <div class="col-12 col-sm-4 col-md">
+                <div class="a-card" id="cash">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/cash.png"
+                      alt="При получении"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">При получении</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-4 col-md">
+                <div class="a-card" id="credit">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/credit.png"
+                      alt="Кредит/рассрочка"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">Кредит/рассрочка</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-4 col-md">
+                <div class="a-card" id="creditCard">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/creditCard.png"
+                      alt="Картой рассрочки"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">Картой рассрочки</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-4 col-md">
+                <div class="a-card" id="onlineCard">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/onlineCard.png"
+                      alt="Картой онлайн"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">Картой онлайн</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-4 col-md">
+                <div class="a-card" id="cashless">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/cashless.png"
+                      alt="Безналичный расчет"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">Безналичный расчет</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="a-payment__content" id="cashForm">
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="cash" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label">Оплата наличными</span>
+              </label>
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="cash" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label">Банковской картой</span>
+              </label>
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="cash" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label">Картой рассрочки</span>
+              </label>
+            </div>
+
+            <div class="a-payment__content" id="creditForm">
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="credit" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label">Рассрочка Онлайн за 5 минут</span>
+              </label>
+              <p class="a-payment__description">
+                Вы можете оплатить заказ, самостоятельно оформив рассрочку
+                Онлайн без бумажного договора и скан-копий документов. Для этого
+                в открывшейся ниже форме нужно нажать кнопку "РАССЧИТАТЬ",
+                выбрать подходящую по сроку рассрочку из доступных для товаров в
+                вашей корзине и завершить оформление заказа. Затем нажмите на
+                кнопку "ОФОРМИТЬ РАССРОЧКУ" и заполните банковскую анкету
+                онлайн. Одобрение заявки занимает несколько минут - Вам придет
+                SMS от банка. Решение о выдаче кредита (рассрочки) принимает
+                банк.
+              </p>
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="credit" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label"
+                  >Рассрочка в интернет-магазине</span
+                >
+              </label>
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="credit" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label"
+                  >Рассрочка в розничном магазине</span
+                >
+              </label>
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="credit" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label">Кредит Онлайн за 5 минут</span>
+              </label>
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="credit" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label">Кредит в интернет-магазине</span>
+              </label>
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="credit" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label">Кредит в розничном магазине</span>
+              </label>
+            </div>
+
+            <div class="a-payment__content" id="creditCardForm">
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="creditCard" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label">Картой рассрочки онлайн</span>
+              </label>
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="creditCard" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label"
+                  >Картой рассрочки при получении</span
+                >
+              </label>
+            </div>
+
+            <div class="a-payment__content" id="onlineCardForm">
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="onlineCard" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label">Банковской картой онлайн</span>
+              </label>
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="onlineCard" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label">Система “Расчет” ЕРИП</span>
+              </label>
+            </div>
+
+            <div class="a-payment__content" id="cashlessForm">
+              <p>
+                Счет-фактура действительна в течение 5 банковских дней. НДС
+                включен в стоимость товара и в счет-фактуре выделен отдельной
+                суммой. Мы отгрузим товар сразу после поступления оплаты на наш
+                счет (обычно на следующий после оплаты день). Внесите реквизиты
+                вашей организации в поля формы ниже и подтвердите заказ.
+              </p>
+              <p>
+                *При покупке по безналичному расчету подарки не выдаются, акции
+                не применяются, скидки и накопления по бонусной карте не
+                предоставляются.
+              </p>
+              <p>
+                **Фактический срок получения товара может отличаться от
+                указанного на сайте, так как отгрузка товара производится только
+                после поступления оплаты на наш счет.
+              </p>
+              <div class="row gy-4">
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Компания</label>
+                    <input />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Юридический адрес</label>
+                    <input />
+                  </div>
+                </div>
+              </div>
+              <div class="row gy-4">
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Рассчетный счет</label>
+                    <input />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Наименование банка</label>
+                    <input />
+                  </div>
+                </div>
+              </div>
+              <div class="row gy-4">
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Адрес банка</label>
+                    <input />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Код банка</label>
+                    <input />
+                  </div>
+                </div>
+              </div>
+              <div class="row gy-4">
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>УНП организации</label>
+                    <input />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Должность руководителя</label>
+                    <input />
+                  </div>
+                </div>
+              </div>
+              <div class="row gy-4">
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>ФИО руководителя</label>
+                    <input />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div id="a-payment" class="a-section">
+        <div class="a-section__header">
+          <h2 class="a-section__title">Оплата</h2>
+          <a class="a-section__edit" href="javascript:void(0)">Изменить</a>
+        </div>
+
+        <div class="a-section__content">
+          <div class="a-payment">
+            <div class="row gy-4">
+              <div class="col-12 col-sm-4 col-md">
+                <div class="a-card" id="cash">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/cash.png"
+                      alt="При получении"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title"
+                      >Наличными или картой в магазине</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-4 col-md">
+                <div class="a-card" id="credit">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/credit.png"
+                      alt="Кредит/рассрочка"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">Кредит/рассрочка</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-4 col-md">
+                <div class="a-card" id="creditCard">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/creditCard.png"
+                      alt="Картой рассрочки"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">Картой рассрочки</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-4 col-md">
+                <div class="a-card" id="onlineCard">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/onlineCard.png"
+                      alt="Картой онлайн"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">Картой онлайн</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-4 col-md">
+                <div class="a-card" id="cashless">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/cashless.png"
+                      alt="Безналичный расчет"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">Безналичный расчет</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="a-payment__content" id="cashForm">
+              <p>
+                Выберите этот способ оплаты, если планируете оплачивать покупку
+                банковской картой или наличными в магазине.
+              </p>
+            </div>
+
+            <div class="a-payment__content" id="creditForm">
+              <p>
+                Выберите этот способ оплаты, если планируете оформить покупку в
+                рассрочку, кредит или лизинг.
+              </p>
+              <p>
+                Кредит, рассрочку и лизинг можно оформить при личном посещении в
+                нашем салоне.
+              </p>
+            </div>
+
+            <div class="a-payment__content" id="creditCardForm">
+              <p>
+                Выберите этот способ оплаты, если планируете оплачивать покупку
+                картой рассрочки, для того чтобы курьер взял с собой платежный
+                терминал.
+              </p>
+              <p>
+                К оплате принимаются карты: «Халва», «Карта покупок», «Магнит»,
+                «Черепаха», «Смарт-карта», «Карта FUN».
+              </p>
+              <p>
+                <b>Важно!</b> Условия оформления покупки по карте рассрочки
+                уточняйте у менеджера интернет-магазина.
+              </p>
+            </div>
+
+            <div class="a-payment__content" id="onlineCardForm">
+              <p>
+                Выберите этот способ, если планируете оплатить покупку онлайн.
+              </p>
+              <p>
+                После оформления заказа вы будете перенаправлены на страницу
+                защищенного сервиса приема платежей "Assist", где нужно будет
+                совершить платеж.
+              </p>
+              <p>К оплате принимаются карты Visa и MasterCard.</p>
+              <p>
+                <b>Важно!</b> Прежде чем проводить платеж, уточните наличие товара у
+                менеджера интернет-магазина.
+              </p>
+            </div>
+
+            <div class="a-payment__content" id="cashlessForm">
+              <p>
+                Счет-фактура действительна в течение 5 банковских дней. НДС
+                включен в стоимость товара и в счет-фактуре выделен отдельной
+                суммой. Мы отгрузим товар сразу после поступления оплаты на наш
+                счет (обычно на следующий после оплаты день). Внесите реквизиты
+                вашей организации в поля формы ниже и подтвердите заказ.
+              </p>
+              <p>
+                *При покупке по безналичному расчету подарки не выдаются, акции
+                не применяются, скидки и накопления по бонусной карте не
+                предоставляются.
+              </p>
+              <p>
+                **Фактический срок получения товара может отличаться от
+                указанного на сайте, так как отгрузка товара производится только
+                после поступления оплаты на наш счет.
+              </p>
+              <div class="row gy-4">
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Компания</label>
+                    <input />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Юридический адрес</label>
+                    <input />
+                  </div>
+                </div>
+              </div>
+              <div class="row gy-4">
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Рассчетный счет</label>
+                    <input />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Наименование банка</label>
+                    <input />
+                  </div>
+                </div>
+              </div>
+              <div class="row gy-4">
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Адрес банка</label>
+                    <input />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Код банка</label>
+                    <input />
+                  </div>
+                </div>
+              </div>
+              <div class="row gy-4">
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>УНП организации</label>
+                    <input />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>Должность руководителя</label>
+                    <input />
+                  </div>
+                </div>
+              </div>
+              <div class="row gy-4">
+                <div class="col-12 col-sm-4">
+                  <div class="a-form-control">
+                    <label>ФИО руководителя</label>
+                    <input />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div id="a-customer" class="a-section">
+        <div class="a-section__header">
+          <h2 class="a-section__title">Покупатель</h2>
+          <a class="a-section__edit" href="javascript:void(0)">Изменить</a>
+        </div>
+
+        <div class="a-section__content">
+          <div class="a-customer">
+            <div class="row">
+              <div class="col-12 col-sm-4">
+                <div class="a-form-control">
+                  <label>ФИО*</label>
+                  <input />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-sm-4">
+                <div class="a-form-control">
+                  <label>Телефон*</label>
+                  <input />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-sm-4">
+                <div class="a-form-control">
+                  <label>E-mail*</label>
+                  <input />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <div class="a-form-control">
+                  <label>Комментарий</label>
+                  <textarea rows="4"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/dist/index.dev.js"></script>
+  </body>
+</html>
