@@ -311,7 +311,7 @@
         <div class="a-section__content">
           <div class="a-payment">
             <div class="row gy-4">
-              <div class="col-12 col-sm-4 col-md">
+              <div class="col-12 col-sm-4 col-lg">
                 <div class="a-card" id="cash">
                   <div class="a-card__image-container">
                     <img
@@ -326,22 +326,37 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-md">
+              <div class="col-12 col-sm-4 col-lg">
                 <div class="a-card" id="credit">
                   <div class="a-card__image-container">
                     <img
                       class="a-card__image"
                       src="./icons/credit.png"
-                      alt="Кредит/рассрочка"
+                      alt="Кредит"
                     />
                   </div>
                   <div class="a-card__title-container">
-                    <span class="a-card__title">Кредит/рассрочка</span>
+                    <span class="a-card__title">Кредит</span>
                   </div>
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-md">
+              <div class="col-12 col-sm-4 col-lg">
+                <div class="a-card" id="installmentPlan">
+                  <div class="a-card__image-container">
+                    <img
+                      class="a-card__image"
+                      src="./icons/credit.png"
+                      alt="Рассрочка"
+                    />
+                  </div>
+                  <div class="a-card__title-container">
+                    <span class="a-card__title">Рассрочка</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-4 col-lg">
                 <div class="a-card" id="creditCard">
                   <div class="a-card__image-container">
                     <img
@@ -356,7 +371,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-md">
+              <div class="col-12 col-sm-4 col-lg">
                 <div class="a-card" id="onlineCard">
                   <div class="a-card__image-container">
                     <img
@@ -371,7 +386,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-md">
+              <div class="col-12 col-sm-4 col-lg">
                 <div class="a-card" id="cashless">
                   <div class="a-card__image-container">
                     <img
@@ -409,7 +424,22 @@
               <label class="a-radio">
                 <input class="a-radio__input" type="radio" name="credit" />
                 <span class="a-radio__checkmark"></span>
-                <span class="a-radio__label">Рассрочка Онлайн за 5 минут</span>
+                <span class="a-radio__label">Кредит в интернет-магазине</span>
+              </label>
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="credit" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label">Кредит в розничном магазине</span>
+              </label>
+            </div>
+
+            <div class="a-payment__content" id="installmentPlanForm">
+              <label class="a-radio">
+                <input class="a-radio__input" type="radio" name="credit" />
+                <span class="a-radio__checkmark"></span>
+                <span class="a-radio__label">
+                  Рассрочка в интернет-магазине
+                </span>
               </label>
               <p class="a-payment__description">
                 Вы можете оплатить заказ, самостоятельно оформив рассрочку
@@ -426,30 +456,8 @@
                 <input class="a-radio__input" type="radio" name="credit" />
                 <span class="a-radio__checkmark"></span>
                 <span class="a-radio__label"
-                  >Рассрочка в интернет-магазине</span
-                >
-              </label>
-              <label class="a-radio">
-                <input class="a-radio__input" type="radio" name="credit" />
-                <span class="a-radio__checkmark"></span>
-                <span class="a-radio__label"
                   >Рассрочка в розничном магазине</span
                 >
-              </label>
-              <label class="a-radio">
-                <input class="a-radio__input" type="radio" name="credit" />
-                <span class="a-radio__checkmark"></span>
-                <span class="a-radio__label">Кредит Онлайн за 5 минут</span>
-              </label>
-              <label class="a-radio">
-                <input class="a-radio__input" type="radio" name="credit" />
-                <span class="a-radio__checkmark"></span>
-                <span class="a-radio__label">Кредит в интернет-магазине</span>
-              </label>
-              <label class="a-radio">
-                <input class="a-radio__input" type="radio" name="credit" />
-                <span class="a-radio__checkmark"></span>
-                <span class="a-radio__label">Кредит в розничном магазине</span>
               </label>
             </div>
 
@@ -838,8 +846,234 @@
           </div>
         </div>
       </div>
+
+      <div class="a-calc">
+        <h3 class="a-calc__header">Калькулятор кредита/рассрочки</h3>
+        <div class="a-calc__section">
+          <div class="d-flex align-items-center">
+            <span class="a-calc__label">Стоимость товара</span>
+            <span class="a-calc__label-thin"
+              >Смартфон Samsung SM-A505FM 128Gb Galaxy A50</span
+            >
+          </div>
+          <span class="a-calc__label">709.00 BYN</span>
+        </div>
+        <div class="a-calc__section">
+          <div class="d-flex align-items-center">
+            <span class="a-calc__label">Срок</span>
+            <span class="a-calc__label-thin"
+              >Укажите срок от 0 до 24 месяцев</span
+            >
+          </div>
+          <div class="row">
+            <div class="col-5 col-sm-4 col-md-3">
+              <div class="a-form-control a-form-control--horizontal">
+                <label>от</label>
+                <input />
+              </div>
+            </div>
+            <div class="col-7 col-sm-6 col-md-5">
+              <div class="a-form-control a-form-control--horizontal">
+                <label>до</label>
+                <input />
+                <label>месяцев</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="a-calc__section">
+          <span class="a-calc__label">Размер первоначального взноса</span>
+          <div class="row">
+            <div class="col-6">
+              <div class="a-form-control">
+                <label>Сумма в BYN</label>
+                <input />
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-6">
+              <div class="a-form-control">
+                <label>Процент, %</label>
+                <input />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            a-calc__section
+            d-flex
+            align-items-center
+            justify-content-between
+          "
+        >
+          <span class="a-calc__label">Сумма сделки</span>
+          <span class="a-calc__price">739 руб.</span>
+        </div>
+        <div class="a-calc__section a-divider"></div>
+        <div class="d-flex justify-content-center">
+          <button class="a-button">Рассчитать</button>
+        </div>
+      </div>
+
+      <div class="a-calc">
+        <h3 class="a-calc__header">Калькулятор кредита/рассрочки</h3>
+        <div class="a-calc__section">
+          <span class="a-calc__label">Тип</span>
+          <div class="row">
+            <div class="col-auto">
+              <label class="a-checkbox">
+                <input class="a-checkbox__input" type="checkbox" />
+                <span class="a-checkbox__checkmark"></span>
+                <span class="a-checkbox__label">Кредит</span>
+              </label>
+            </div>
+            <div class="col-auto">
+              <label class="a-checkbox">
+                <input class="a-checkbox__input" type="checkbox" />
+                <span class="a-checkbox__checkmark"></span>
+                <span class="a-checkbox__label">Рассрочка</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="a-calc__section">
+          <div class="d-flex align-items-center">
+            <span class="a-calc__label">Срок</span>
+            <span class="a-calc__label-thin"
+              >Укажите срок от 0 до 24 месяцев</span
+            >
+          </div>
+          <div class="row">
+            <div class="col-5 col-sm-4 col-md-3">
+              <div class="a-form-control a-form-control--horizontal">
+                <label>от</label>
+                <input />
+              </div>
+            </div>
+            <div class="col-7 col-sm-6 col-md-5">
+              <div class="a-form-control a-form-control--horizontal">
+                <label>до</label>
+                <input />
+                <label>месяцев</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="a-calc__section">
+          <span class="a-calc__label">Размер первоначального взноса</span>
+          <div class="row">
+            <div class="col-6">
+              <div class="a-form-control">
+                <label>Сумма в BYN</label>
+                <input />
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-6">
+              <div class="a-form-control">
+                <label>Процент, %</label>
+                <input />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            a-calc__section
+            d-flex
+            align-items-center
+            justify-content-between
+          "
+        >
+          <span class="a-calc__label">Сумма сделки</span>
+          <span class="a-calc__price">739 руб.</span>
+        </div>
+        <div class="a-calc__section a-divider"></div>
+        <div class="d-flex justify-content-center">
+          <button class="a-button">Рассчитать</button>
+        </div>
+      </div>
+
+      <div class="a-bank">
+        <div
+          class="
+            a-bank__section
+            d-flex
+            align-items-center
+            justify-content-between
+          "
+        >
+          <div>
+            <img src="./images/bank.png" alt="Паритет банк" />
+            <span class="a-bank__title">Рассрочка на 24 месяца</span>
+          </div>
+          <button class="a-button a-button--outlined">Выбрать</button>
+        </div>
+        <div class="a-bank__section row gy-4">
+          <div class="col-12 col-sm-4 col-lg">
+            <div class="a-bank__card">
+              <img src="./icons/calendar.png" alt="Срок выплат" />
+              <span>срок выплат</span>
+              <span>24 месяца</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg">
+            <div class="a-bank__card">
+              <img src="./icons/percent.png" alt="Процентная ставка" />
+              <span>процентная ставка</span>
+              <span>0,00001%</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg">
+            <div class="a-bank__card">
+              <img src="./icons/coins.png" alt="Размер 1-ого взноса" />
+              <span>размер 1-ого взноса</span>
+              <span>38.00 BYN</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg">
+            <div class="a-bank__card">
+              <img src="./icons/cash.png" alt="Ежемесячный платеж" />
+              <span>ежемесячный платеж</span>
+              <span>26.00 BYN</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg">
+            <div class="a-bank__card">
+              <img src="./icons/cashless.png" alt="Сумма переплаты" />
+              <span>сумма переплаты</span>
+              <span>26.00 BYN</span>
+            </div>
+          </div>
+        </div>
+        <div class="a-bank__section">
+          <ul>
+            <li>Возраст: 18 - 64</li>
+            <li>Первоначальный взнос: от 0%</li>
+            <li>Без справки о доходах!</li>
+          </ul>
+        </div>
+        <div class="a-bank__section">
+          <p>Для оформления рассрочки необходимо:</p>
+          <a class="a-link">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- <div class="a-overlay"> -->
+      <div class="a-modal">
+        <p class="a-modal__text">
+          При выборе данного способа оплаты, скидки, рассчитанные ранее в
+          корзине, в том числе оплата бонусами, могут отмениться. Продолжить?
+          <br />
+          Да, это очень надо. Спасибо
+        </p>
+        <div class="a-modal__actions">
+          <button class="a-button a-button--cancel">Отменить</button>
+          <button class="a-button">Подтвердить</button>
+        </div>
+      </div>
+      <!-- </div> -->
     </div>
 
-    <script src="scripts/dist/index.dev.js"></script>
+    <script src="scripts/dist/index.prod.js"></script>
   </body>
 </html>

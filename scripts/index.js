@@ -13,7 +13,7 @@ deliveryCardKeys.forEach((key) => {
 });
 
 
-const paymentCardKeys = ["cash", "credit", "creditCard", "onlineCard", "cashless"];
+const paymentCardKeys = ["cash", "credit", "installmentPlan", "creditCard", "onlineCard", "cashless"];
 
 paymentCardKeys.forEach((key) => {
   const cardEl = document.getElementById(key);

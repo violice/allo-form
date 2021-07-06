@@ -12,7 +12,7 @@ deliveryCardKeys.forEach(function (key) {
     document.getElementById("".concat(key, "Form")).classList.add("d-block");
   });
 });
-var paymentCardKeys = ["cash", "credit", "creditCard", "onlineCard", "cashless"];
+var paymentCardKeys = ["cash", "credit", "installmentPlan", "creditCard", "onlineCard", "cashless"];
 paymentCardKeys.forEach(function (key) {
   var cardEl = document.getElementById(key);
   cardEl.addEventListener("click", function () {
