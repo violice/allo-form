@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .a-container {
   max-width: 1020px;
   padding: 0px 20px;
@@ -116,6 +117,28 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
+}
+.a-radio--disabled::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  left: -2px;
+  display: block;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  backdrop-filter: blur(1px);
+}
+.a-radio--disabled::after {
+  content: "Недоступен(а)";
+  position: absolute;
+  left: 240px;
+  z-index: 2;
+  background: #EB111C;
+  padding: 3px 6px;
+  color: #fff;
+  font-size: 10px;
 }
 .a-radio__input {
   width: 0px;
