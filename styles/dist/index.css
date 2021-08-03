@@ -142,7 +142,8 @@ body *, body :after, body :before {
 .a-bank__card > span {
   display: block;
   font-size: 14px;
-}
-.a-bank__card > span:last-of-type {
   font-weight: 700;
+}
+.a-bank__card > span:first-of-type {
+  font-weight: 400;
 }
