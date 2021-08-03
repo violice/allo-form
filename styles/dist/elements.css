@@ -51,6 +51,7 @@
   background: #fbfbfb;
   border: 1px solid #f2f2f2;
   cursor: pointer;
+  height: 100%;
 }
 .a-card--active {
   color: #dd0b06;
@@ -72,7 +73,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 38px;
+  min-height: 38px;
 }
 .a-card__title {
   display: block;
@@ -135,7 +136,7 @@
   position: absolute;
   left: 240px;
   z-index: 2;
-  background: #EB111C;
+  background: #eb111c;
   padding: 3px 6px;
   color: #fff;
   font-size: 10px;

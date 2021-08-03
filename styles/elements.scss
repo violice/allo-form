@@ -55,6 +55,7 @@
   background: #fbfbfb;
   border: 1px solid #f2f2f2;
   cursor: pointer;
+  height: 100%;
 
   &--active {
     color: #dd0b06;
@@ -80,7 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 38px;
+    min-height: 38px;
   }
 
   &__title {
@@ -143,7 +144,7 @@
 
   &--disabled {
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       z-index: 1;
       top: -2px;
@@ -155,11 +156,11 @@
     }
 
     &::after {
-      content: 'Недоступен(а)';
+      content: "Недоступен(а)";
       position: absolute;
       left: 240px;
       z-index: 2;
-      background: #EB111C;
+      background: #eb111c;
       padding: 3px 6px;
       color: #fff;
       font-size: 10px;

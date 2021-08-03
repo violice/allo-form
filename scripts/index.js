@@ -5,10 +5,10 @@ deliveryCardKeys.forEach((key) => {
   cardEl.addEventListener("click", () => {
     deliveryCardKeys.forEach((key) => {
       document.getElementById(key).classList.remove("a-card--active");
-      document.getElementById(`${key}Form`).classList.remove("d-block");
+      document.getElementById(`${key}Form`).classList.remove("a-d-block");
     });
     cardEl.classList.add("a-card--active");
-    document.getElementById(`${key}Form`).classList.add("d-block");
+    document.getElementById(`${key}Form`).classList.add("a-d-block");
   });
 });
 
@@ -20,9 +20,9 @@ paymentCardKeys.forEach((key) => {
   cardEl.addEventListener("click", () => {
     paymentCardKeys.forEach((key) => {
       document.getElementById(key).classList.remove("a-card--active");
-      document.getElementById(`${key}Form`).classList.remove("d-block");
+      document.getElementById(`${key}Form`).classList.remove("a-d-block");
     });
     cardEl.classList.add("a-card--active");
-    document.getElementById(`${key}Form`).classList.add("d-block");
+    document.getElementById(`${key}Form`).classList.add("a-d-block");
   });
 });

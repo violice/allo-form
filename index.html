@@ -11,10 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/bootstrap-reboot.min.css" />
-    <link rel="stylesheet" href="./styles/bootstrap-utilities.min.css" />
-    <link rel="stylesheet" href="./styles/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/dist/elements.min.css" />
+    <link rel="stylesheet" href="./styles/dist/utils.min.css" />
     <link rel="stylesheet" href="./styles/dist/index.min.css" />
   </head>
   <body>
@@ -36,8 +35,8 @@
 
         <div class="a-section__content">
           <div class="a-delivery">
-            <div class="row gy-4">
-              <div class="col-12 col-sm-4">
+            <div class="a-row">
+              <div class="a-col-12 a-col-sm-4 mb-3">
                 <div class="a-card" id="pickUp">
                   <div class="a-card__image-container">
                     <img
@@ -51,7 +50,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-sm-4">
+              <div class="a-col-12 a-col-sm-4">
                 <div class="a-card" id="courierCity">
                   <div class="a-card__image-container">
                     <img
@@ -65,7 +64,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-sm-4">
+              <div class="a-col-12 a-col-sm-4">
                 <div class="a-card" id="courierCountry">
                   <div class="a-card__image-container">
                     <img
@@ -82,8 +81,8 @@
             </div>
 
             <div class="a-delivery__content" id="pickUpForm">
-              <div class="row">
-                <div class="col-12 col-sm-4">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Укажите город доставки</label>
                     <select>
@@ -147,22 +146,22 @@
             </div>
 
             <div class="a-delivery__content" id="courierCityForm">
-              <div class="row">
-                <div class="col-4">
+              <div class="a-row">
+                <div class="a-col-4">
                   <div class="a-form-control">
                     <label>Улица</label>
                     <input />
                   </div>
                 </div>
 
-                <div class="col-4 col-sm-2">
+                <div class="a-col-4 a-col-sm-2">
                   <div class="a-form-control">
                     <label>Номер дома</label>
                     <input type="number" />
                   </div>
                 </div>
 
-                <div class="col-4 col-sm-2">
+                <div class="a-col-4 a-col-sm-2">
                   <div class="a-form-control">
                     <label>Квартира</label>
                     <input type="number" />
@@ -170,22 +169,22 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-4 col-sm-2">
+              <div class="a-row">
+                <div class="a-col-4 a-col-sm-2">
                   <div class="a-form-control">
                     <label>Подъезд</label>
                     <input type="number" />
                   </div>
                 </div>
 
-                <div class="col-4 col-sm-2">
+                <div class="a-col-4 a-col-sm-2">
                   <div class="a-form-control">
                     <label>Этаж</label>
                     <input type="number" />
                   </div>
                 </div>
 
-                <div class="col-4 col-sm-2">
+                <div class="a-col-4 a-col-sm-2">
                   <div class="a-form-control">
                     <label>Домофон</label>
                     <input type="number" />
@@ -193,8 +192,8 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-12 col-sm-6">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-6">
                   <div class="a-form-control">
                     <label>Желаемое время доставки</label>
                     <select>
@@ -206,19 +205,19 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-12 col-sm-6">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-6">
                   <div class="a-form-control">
                     <label>Комментарий</label>
-                    <textarea rows="4"></textarea>
+                    <textarea a-rows="4"></textarea>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="a-delivery__content" id="courierCountryForm">
-              <div class="row">
-                <div class="col-12 col-sm-4">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Город/Населенный пункт</label>
                     <select>
@@ -230,22 +229,22 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-4">
+              <div class="a-row">
+                <div class="a-col-4">
                   <div class="a-form-control">
                     <label>Улица</label>
                     <input />
                   </div>
                 </div>
 
-                <div class="col-4 col-sm-2">
+                <div class="a-col-4 a-col-sm-2">
                   <div class="a-form-control">
                     <label>Номер дома</label>
                     <input type="number" />
                   </div>
                 </div>
 
-                <div class="col-4 col-sm-2">
+                <div class="a-col-4 a-col-sm-2">
                   <div class="a-form-control">
                     <label>Квартира</label>
                     <input type="number" />
@@ -253,22 +252,22 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-4 col-sm-2">
+              <div class="a-row">
+                <div class="a-col-4 a-col-sm-2">
                   <div class="a-form-control">
                     <label>Подъезд</label>
                     <input type="number" />
                   </div>
                 </div>
 
-                <div class="col-4 col-sm-2">
+                <div class="a-col-4 a-col-sm-2">
                   <div class="a-form-control">
                     <label>Этаж</label>
                     <input type="number" />
                   </div>
                 </div>
 
-                <div class="col-4 col-sm-2">
+                <div class="a-col-4 a-col-sm-2">
                   <div class="a-form-control">
                     <label>Домофон</label>
                     <input type="number" />
@@ -276,8 +275,8 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-12 col-sm-6">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-6">
                   <div class="a-form-control">
                     <label>Желаемое время доставки</label>
                     <select>
@@ -289,11 +288,11 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-12 col-sm-6">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-6">
                   <div class="a-form-control">
                     <label>Комментарий</label>
-                    <textarea rows="4"></textarea>
+                    <textarea a-rows="4"></textarea>
                   </div>
                 </div>
               </div>
@@ -310,8 +309,8 @@
 
         <div class="a-section__content">
           <div class="a-payment">
-            <div class="row gy-4">
-              <div class="col-12 col-sm-4 col-lg">
+            <div class="a-row">
+              <div class="a-col-12 a-col-sm-4 a-col-lg">
                 <div class="a-card" id="cash">
                   <div class="a-card__image-container">
                     <img
@@ -326,7 +325,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-lg">
+              <div class="a-col-12 a-col-sm-4 a-col-lg">
                 <div class="a-card" id="credit">
                   <div class="a-card__image-container">
                     <img
@@ -341,7 +340,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-lg">
+              <div class="a-col-12 a-col-sm-4 a-col-lg">
                 <div class="a-card" id="installmentPlan">
                   <div class="a-card__image-container">
                     <img
@@ -356,7 +355,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-lg">
+              <div class="a-col-12 a-col-sm-4 a-col-lg">
                 <div class="a-card" id="creditCard">
                   <div class="a-card__image-container">
                     <img
@@ -371,7 +370,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-lg">
+              <div class="a-col-12 a-col-sm-4 a-col-lg">
                 <div class="a-card" id="onlineCard">
                   <div class="a-card__image-container">
                     <img
@@ -386,7 +385,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-lg">
+              <div class="a-col-12 a-col-sm-4 a-col-lg">
                 <div class="a-card" id="cashless">
                   <div class="a-card__image-container">
                     <img
@@ -422,7 +421,12 @@
 
             <div class="a-payment__content" id="creditForm">
               <label class="a-radio a-radio--disabled">
-                <input class="a-radio__input" type="radio" name="credit" disabled />
+                <input
+                  class="a-radio__input"
+                  type="radio"
+                  name="credit"
+                  disabled
+                />
                 <span class="a-radio__checkmark"></span>
                 <span class="a-radio__label">Кредит в интернет-магазине</span>
               </label>
@@ -507,64 +511,64 @@
                 указанного на сайте, так как отгрузка товара производится только
                 после поступления оплаты на наш счет.
               </p>
-              <div class="row gy-4">
-                <div class="col-12 col-sm-4">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Компания</label>
                     <input />
                   </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Юридический адрес</label>
                     <input />
                   </div>
                 </div>
               </div>
-              <div class="row gy-4">
-                <div class="col-12 col-sm-4">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Рассчетный счет</label>
                     <input />
                   </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Наименование банка</label>
                     <input />
                   </div>
                 </div>
               </div>
-              <div class="row gy-4">
-                <div class="col-12 col-sm-4">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Адрес банка</label>
                     <input />
                   </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Код банка</label>
                     <input />
                   </div>
                 </div>
               </div>
-              <div class="row gy-4">
-                <div class="col-12 col-sm-4">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>УНП организации</label>
                     <input />
                   </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Должность руководителя</label>
                     <input />
                   </div>
                 </div>
               </div>
-              <div class="row gy-4">
-                <div class="col-12 col-sm-4">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>ФИО руководителя</label>
                     <input />
@@ -584,8 +588,8 @@
 
         <div class="a-section__content">
           <div class="a-payment">
-            <div class="row gy-4">
-              <div class="col-12 col-sm-4 col-md">
+            <div class="a-row">
+              <div class="a-col-12 a-col-sm-4 a-col-md">
                 <div class="a-card" id="cash">
                   <div class="a-card__image-container">
                     <img
@@ -602,7 +606,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-md">
+              <div class="a-col-12 a-col-sm-4 a-col-md">
                 <div class="a-card" id="credit">
                   <div class="a-card__image-container">
                     <img
@@ -617,7 +621,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-md">
+              <div class="a-col-12 a-col-sm-4 a-col-md">
                 <div class="a-card" id="creditCard">
                   <div class="a-card__image-container">
                     <img
@@ -632,7 +636,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-md">
+              <div class="a-col-12 a-col-sm-4 a-col-md">
                 <div class="a-card" id="onlineCard">
                   <div class="a-card__image-container">
                     <img
@@ -647,7 +651,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-4 col-md">
+              <div class="a-col-12 a-col-sm-4 a-col-md">
                 <div class="a-card" id="cashless">
                   <div class="a-card__image-container">
                     <img
@@ -731,64 +735,64 @@
                 указанного на сайте, так как отгрузка товара производится только
                 после поступления оплаты на наш счет.
               </p>
-              <div class="row gy-4">
-                <div class="col-12 col-sm-4">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Компания</label>
                     <input />
                   </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Юридический адрес</label>
                     <input />
                   </div>
                 </div>
               </div>
-              <div class="row gy-4">
-                <div class="col-12 col-sm-4">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Рассчетный счет</label>
                     <input />
                   </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Наименование банка</label>
                     <input />
                   </div>
                 </div>
               </div>
-              <div class="row gy-4">
-                <div class="col-12 col-sm-4">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Адрес банка</label>
                     <input />
                   </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Код банка</label>
                     <input />
                   </div>
                 </div>
               </div>
-              <div class="row gy-4">
-                <div class="col-12 col-sm-4">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>УНП организации</label>
                     <input />
                   </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>Должность руководителя</label>
                     <input />
                   </div>
                 </div>
               </div>
-              <div class="row gy-4">
-                <div class="col-12 col-sm-4">
+              <div class="a-row">
+                <div class="a-col-12 a-col-sm-4">
                   <div class="a-form-control">
                     <label>ФИО руководителя</label>
                     <input />
@@ -808,8 +812,8 @@
 
         <div class="a-section__content">
           <div class="a-customer">
-            <div class="row">
-              <div class="col-12 col-sm-4">
+            <div class="a-row">
+              <div class="a-col-12 a-col-sm-4">
                 <div class="a-form-control">
                   <label>ФИО*</label>
                   <input />
@@ -817,8 +821,8 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-12 col-sm-4">
+            <div class="a-row">
+              <div class="a-col-12 a-col-sm-4">
                 <div class="a-form-control">
                   <label>Телефон*</label>
                   <input />
@@ -826,8 +830,8 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-12 col-sm-4">
+            <div class="a-row">
+              <div class="a-col-12 a-col-sm-4">
                 <div class="a-form-control">
                   <label>E-mail*</label>
                   <input />
@@ -835,11 +839,11 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-12 col-sm-6">
+            <div class="a-row">
+              <div class="a-col-12 a-col-sm-6">
                 <div class="a-form-control">
                   <label>Комментарий</label>
-                  <textarea rows="4"></textarea>
+                  <textarea a-rows="4"></textarea>
                 </div>
               </div>
             </div>
@@ -850,7 +854,7 @@
       <div class="a-calc">
         <h3 class="a-calc__header">Калькулятор кредита/рассрочки</h3>
         <div class="a-calc__section">
-          <div class="d-flex align-items-center">
+          <div class="a-d-flex a-align-items-center">
             <span class="a-calc__label">Стоимость товара</span>
             <span class="a-calc__label-thin"
               >Смартфон Samsung SM-A505FM 128Gb Galaxy A50</span
@@ -859,20 +863,20 @@
           <span class="a-calc__label">709.00 BYN</span>
         </div>
         <div class="a-calc__section">
-          <div class="d-flex align-items-center">
+          <div class="a-d-flex a-align-items-center">
             <span class="a-calc__label">Срок</span>
             <span class="a-calc__label-thin"
               >Укажите срок от 0 до 24 месяцев</span
             >
           </div>
-          <div class="row">
-            <div class="col-5 col-sm-4 col-md-3">
+          <div class="a-row">
+            <div class="a-col-12 a-col-sm-4 a-col-md-3">
               <div class="a-form-control a-form-control--horizontal">
                 <label>от</label>
                 <input />
               </div>
             </div>
-            <div class="col-7 col-sm-6 col-md-5">
+            <div class="a-col-12 a-col-sm-6 a-col-md-5">
               <div class="a-form-control a-form-control--horizontal">
                 <label>до</label>
                 <input />
@@ -883,14 +887,14 @@
         </div>
         <div class="a-calc__section">
           <span class="a-calc__label">Размер первоначального взноса</span>
-          <div class="row">
-            <div class="col-6">
+          <div class="a-row">
+            <div class="a-col-6">
               <div class="a-form-control">
                 <label>Сумма в BYN</label>
                 <input />
               </div>
             </div>
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="a-col-md-2 a-col-sm-4 a-col-6">
               <div class="a-form-control">
                 <label>Процент, %</label>
                 <input />
@@ -901,16 +905,16 @@
         <div
           class="
             a-calc__section
-            d-flex
-            align-items-center
-            justify-content-between
+            a-d-flex
+            a-align-items-center
+            a-justify-content-between
           "
         >
           <span class="a-calc__label">Сумма сделки</span>
           <span class="a-calc__price">739 руб.</span>
         </div>
         <div class="a-calc__section a-divider"></div>
-        <div class="d-flex justify-content-center">
+        <div class="a-d-flex a-justify-content-center">
           <button class="a-button">Рассчитать</button>
         </div>
       </div>
@@ -919,15 +923,15 @@
         <h3 class="a-calc__header">Калькулятор кредита/рассрочки</h3>
         <div class="a-calc__section">
           <span class="a-calc__label">Тип</span>
-          <div class="row">
-            <div class="col-auto">
+          <div class="a-row">
+            <div class="a-col-auto">
               <label class="a-checkbox">
                 <input class="a-checkbox__input" type="checkbox" />
                 <span class="a-checkbox__checkmark"></span>
                 <span class="a-checkbox__label">Кредит</span>
               </label>
             </div>
-            <div class="col-auto">
+            <div class="a-col-auto">
               <label class="a-checkbox">
                 <input class="a-checkbox__input" type="checkbox" />
                 <span class="a-checkbox__checkmark"></span>
@@ -937,20 +941,20 @@
           </div>
         </div>
         <div class="a-calc__section">
-          <div class="d-flex align-items-center">
+          <div class="a-d-flex a-align-items-center">
             <span class="a-calc__label">Срок</span>
             <span class="a-calc__label-thin"
               >Укажите срок от 0 до 24 месяцев</span
             >
           </div>
-          <div class="row">
-            <div class="col-5 col-sm-4 col-md-3">
+          <div class="a-row">
+            <div class="a-col-12 a-col-sm-4 a-col-md-3">
               <div class="a-form-control a-form-control--horizontal">
                 <label>от</label>
                 <input />
               </div>
             </div>
-            <div class="col-7 col-sm-6 col-md-5">
+            <div class="a-col-12 a-col-sm-6 a-col-md-5">
               <div class="a-form-control a-form-control--horizontal">
                 <label>до</label>
                 <input />
@@ -961,14 +965,14 @@
         </div>
         <div class="a-calc__section">
           <span class="a-calc__label">Размер первоначального взноса</span>
-          <div class="row">
-            <div class="col-6">
+          <div class="a-row">
+            <div class="a-col-6">
               <div class="a-form-control">
                 <label>Сумма в BYN</label>
                 <input />
               </div>
             </div>
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="a-col-md-2 a-col-sm-4 a-col-6">
               <div class="a-form-control">
                 <label>Процент, %</label>
                 <input />
@@ -979,16 +983,16 @@
         <div
           class="
             a-calc__section
-            d-flex
-            align-items-center
-            justify-content-between
+            a-d-flex
+            a-align-items-center
+            a-justify-content-between
           "
         >
           <span class="a-calc__label">Сумма сделки</span>
           <span class="a-calc__price">739 руб.</span>
         </div>
         <div class="a-calc__section a-divider"></div>
-        <div class="d-flex justify-content-center">
+        <div class="a-d-flex a-justify-content-center">
           <button class="a-button">Рассчитать</button>
         </div>
       </div>
@@ -997,51 +1001,53 @@
         <div
           class="
             a-bank__section
-            d-flex
-            align-items-center
-            justify-content-between
+            a-d-flex
+            a-align-items-center
+            a-justify-content-between
           "
         >
           <div>
-            <img src="./images/bank.png" alt="Паритет банк" />
+            <img class="a-bank__image" src="./images/bank.png" alt="Паритет банк" />
             <span class="a-bank__title">Рассрочка на 24 месяца</span>
           </div>
           <button class="a-button a-button--outlined">Выбрать</button>
         </div>
-        <div class="a-bank__section row gy-4">
-          <div class="col-12 col-sm-4 col-lg">
-            <div class="a-bank__card">
-              <img src="./icons/calendar.png" alt="Срок выплат" />
-              <span>срок выплат</span>
-              <span>24 месяца</span>
+        <div class="a-bank__section">
+          <div class="a-row">
+            <div class="a-col-12 a-col-sm-4 a-col-lg">
+              <div class="a-bank__card">
+                <img src="./icons/calendar.png" alt="Срок выплат" />
+                <span>срок выплат</span>
+                <span>24 месяца</span>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-4 col-lg">
-            <div class="a-bank__card">
-              <img src="./icons/percent.png" alt="Процентная ставка" />
-              <span>процентная ставка</span>
-              <span>0,00001%</span>
+            <div class="a-col-12 a-col-sm-4 a-col-lg">
+              <div class="a-bank__card">
+                <img src="./icons/percent.png" alt="Процентная ставка" />
+                <span>процентная ставка</span>
+                <span>0,00001%</span>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-4 col-lg">
-            <div class="a-bank__card">
-              <img src="./icons/coins.png" alt="Размер 1-ого взноса" />
-              <span>размер 1-ого взноса</span>
-              <span>38.00 BYN</span>
+            <div class="a-col-12 a-col-sm-4 a-col-lg">
+              <div class="a-bank__card">
+                <img src="./icons/coins.png" alt="Размер 1-ого взноса" />
+                <span>размер 1-ого взноса</span>
+                <span>38.00 BYN</span>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-4 col-lg">
-            <div class="a-bank__card">
-              <img src="./icons/cash.png" alt="Ежемесячный платеж" />
-              <span>ежемесячный платеж</span>
-              <span>26.00 BYN</span>
+            <div class="a-col-12 a-col-sm-4 a-col-lg">
+              <div class="a-bank__card">
+                <img src="./icons/cash.png" alt="Ежемесячный платеж" />
+                <span>ежемесячный платеж</span>
+                <span>26.00 BYN</span>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-4 col-lg">
-            <div class="a-bank__card">
-              <img src="./icons/cashless.png" alt="Сумма переплаты" />
-              <span>сумма переплаты</span>
-              <span>26.00 BYN</span>
+            <div class="a-col-12 a-col-sm-4 a-col-lg">
+              <div class="a-bank__card">
+                <img src="./icons/cashless.png" alt="Сумма переплаты" />
+                <span>сумма переплаты</span>
+                <span>26.00 BYN</span>
+              </div>
             </div>
           </div>
         </div>
