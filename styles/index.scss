@@ -120,6 +120,13 @@ body {
     }
   }
 
+  &__link {
+    font-size: 12px;
+    color: #dd0b06;
+    margin-bottom: 8px;
+    text-decoration: none;
+  }
+
   &__price {
     font-weight: 600;
     font-size: 24px;

@@ -101,6 +101,12 @@ body *, body :after, body :before {
   color: #666666;
   margin-bottom: 8px;
 }
+.a-calc__link {
+  font-size: 12px;
+  color: #dd0b06;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
 .a-calc__price {
   font-weight: 600;
   font-size: 24px;
