@@ -5,7 +5,9 @@ body {
 body * {
   box-sizing: border-box;
 }
-body *, body :after, body :before {
+body *,
+body :after,
+body :before {
   box-sizing: border-box;
 }
 
@@ -139,6 +141,14 @@ body *, body :after, body :before {
   margin: 0;
   padding-left: 16px;
 }
+.a-bank__row {
+  display: flex;
+  margin: 0px -12px;
+}
+.a-bank__col {
+  flex: 1 0 0%;
+  padding: 0px 12px;
+}
 .a-bank__card {
   text-align: center;
 }
@@ -152,4 +162,44 @@ body *, body :after, body :before {
 }
 .a-bank__card > span:first-of-type {
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .a-bank__col {
+    padding: 4px;
+  }
+  .a-bank__col:first-of-type {
+    padding-left: 12px;
+  }
+  .a-bank__col:last-of-type {
+    padding-right: 12px;
+  }
+  .a-bank__col:not(:last-of-type) {
+    border-right: 1px solid #f2f2f2;
+  }
+  .a-bank__card > img {
+    display: none;
+  }
+  .a-bank__card > span {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .a-bank__card > span:first-of-type {
+    font-weight: 400;
+    margin-bottom: 4px;
+    min-height: 34px;
+  }
+}
+@media (max-width: 576px) {
+  .a-bank__card > span {
+    font-size: 10px;
+  }
+  .a-bank__card > span:first-of-type {
+    min-height: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .a-bank__card > span {
+    font-size: 9px;
+  }
 }
