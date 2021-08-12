@@ -853,7 +853,7 @@
       <div class="a-calc">
         <h3 class="a-calc__header">Калькулятор кредита/рассрочки</h3>
         <div class="a-calc__section">
-          <div class="a-d-flex a-align-items-center">
+          <div class="a-d-flex">
             <span class="a-calc__label">Стоимость товара</span>
             <a class="a-calc__link" href="javascript:void(0)"
               >Смартфон Samsung SM-A505FM 128Gb Galaxy A50</a
@@ -862,7 +862,7 @@
           <span class="a-calc__label">709.00 BYN</span>
         </div>
         <div class="a-calc__section">
-          <div class="a-d-flex a-align-items-center">
+          <div class="a-d-flex">
             <span class="a-calc__label">Срок</span>
             <span class="a-calc__label-thin"
               >Укажите срок от 0 до 24 месяцев</span
@@ -996,10 +996,11 @@
         <div
           class="
             a-bank__section
-            a-d-flex a-align-items-center a-justify-content-between
+            a-row
+            a-align-items-center
           "
         >
-          <div>
+          <div class="a-col">
             <img
               class="a-bank__image"
               src="./images/bank.png"
@@ -1007,7 +1008,9 @@
             />
             <span class="a-bank__title">Рассрочка на 24 месяца</span>
           </div>
-          <button class="a-button a-button--outlined">Выбрать</button>
+          <div class="a-col-auto">
+            <button class="a-button a-button--outlined">Выбрать</button>
+          </div>
         </div>
         <div class="a-bank__section">
           <div class="a-bank__row">
