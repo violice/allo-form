@@ -57,6 +57,10 @@
   cursor: pointer;
   height: 100%;
 
+  @media screen and (max-width: 576px){
+    height: auto;
+  }
+
   &--active {
     color: #dd0b06;
 

@@ -53,6 +53,11 @@
   cursor: pointer;
   height: 100%;
 }
+@media screen and (max-width: 576px) {
+  .a-card {
+    height: auto;
+  }
+}
 .a-card--active {
   color: #dd0b06;
 }

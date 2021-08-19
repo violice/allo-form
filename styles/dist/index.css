@@ -109,10 +109,9 @@ body :before {
 .a-calc__link {
   font-size: 12px;
   line-height: 16px;
-  color: #dd0b06;
+  color: #666666;
   margin-top: 2px;
   margin-bottom: 8px;
-  text-decoration: none;
 }
 .a-calc__price {
   font-weight: 600;
