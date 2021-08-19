@@ -244,8 +244,10 @@ body {
 @media (max-width: 576px) {
   .a-bank__card > span {
     font-size: 10px;
+    min-height: 25px;
+
     &:first-of-type {
-      min-height: 28px;
+      min-height: 35px;
     }
   }
 }
