@@ -187,8 +187,9 @@ body {
   &__card {
     text-align: center;
 
-    & > img {
+    &-image {
       margin-bottom: 8px;
+      height: 34px;
     }
 
     & > span {
@@ -223,7 +224,7 @@ body {
     }
 
     &__card {
-      & > img {
+      &-image {
         display: none;
       }
 

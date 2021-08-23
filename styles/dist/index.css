@@ -159,8 +159,9 @@ body :before {
 .a-bank__card {
   text-align: center;
 }
-.a-bank__card > img {
+.a-bank__card-image {
   margin-bottom: 8px;
+  height: 34px;
 }
 .a-bank__card > span {
   display: block;
@@ -185,7 +186,7 @@ body :before {
   .a-bank__col:not(:last-of-type) {
     border-right: 1px solid #f2f2f2;
   }
-  .a-bank__card > img {
+  .a-bank__card-image {
     display: none;
   }
   .a-bank__card > span {
