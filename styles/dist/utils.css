@@ -21,7 +21,7 @@
 .a-row {
   display: flex;
   flex-wrap: wrap;
-  margin: -12px;
+  margin: 0px -12px;
 }
 .a-row > * {
   flex-shrink: 0;
